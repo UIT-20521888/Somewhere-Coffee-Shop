@@ -200,6 +200,7 @@ figcaption .name{
 .buy{
     width:30%;
     float:right;
+    /* height:55%; */
     padding:100px 5px;
 }
 .txt{

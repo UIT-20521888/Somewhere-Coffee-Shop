@@ -132,86 +132,97 @@
                 <header>
                     Black Coffee
                 </header>
-                <div class="buy">
-                    <form>
-                        <input type="number" name="number" id="number" min="1" value="1" class="txt"
-                            style="width:35px;">
-                        <select class="txt" id="select">
-                            <option value="S" style="color:#4B2802">$2.0 (S)</option>
-                            <option value="M" style="color:#4B2802">$2.5 (M)</option>
-                            <option value="L" style="color:#4B2802">$3.0 (L)</option>
-                        </select>
-                        <input type="submit" class="but" value="Buy">
-                    </form>
+                <div style="width:100%;height: 300px;">
+                    
+                    <div class="buy">
+                        <form>
+                            <input type="number" name="number" id="number" min="1" value="1" class="txt"
+                                style="width:35px;">
+                            <select class="txt" id="select">
+                                <option value="S" style="color:#4B2802">$2.0 (S)</option>
+                                <option value="M" style="color:#4B2802">$2.5 (M)</option>
+                                <option value="L" style="color:#4B2802">$3.0 (L)</option>
+                            </select>
+                            <input type="submit" class="but" value="Buy">
+                        </form>
 
-                    <!--Inner content DIVs should always carry "contentdiv" CSS class-->
-                    <!--Pagination DIV should always carry "paginate-SLIDERID" CSS class-->
+                        <!--Inner content DIVs should always carry "contentdiv" CSS class-->
+                        <!--Pagination DIV should always carry "paginate-SLIDERID" CSS class-->
 
 
-                </div>
-                <div id="slider2" class="sliderwrapper">
-
-                    <div class="contentdiv">
-                        <img src="../images/black-coffee.jpg" alt="">
                     </div>
-                    <div class="contentdiv">
-                        <img src="../images/cafe-breve.jpg" alt="">
-                    </div>
-                    <div class="contentdiv">
-                        <img src="../images/espresso-coffee.jpg" alt="">
-                    </div>
-                </div>
-                <div id="paginate-slider2" class="pagination">
+                    <div id="slider2" class="sliderwrapper">
 
-                    <a href="#" class="toc">
-                        <img src="../images/black-coffee.jpg" width="80" height="55" alt="">
-                    </a>
-                    <a href="#" class="toc anotherclass">
-                        <img src="../images/cafe-breve.jpg" width="80" height="55" alt="">
-                    </a>
-                    <a href="#" class="toc">
-                        <img src="../images/espresso-coffee.jpg" width="80" height="55" alt="">
-                    </a>
-                    <a href="#" class="prev" style="margin-left: 10px">
-                        << /a>
+                        <div class="contentdiv">
+                            <img src="../images/black-coffee.jpg" alt="">
+                        </div>
+                        <div class="contentdiv">
+                            <img src="../images/cafe-breve.jpg" alt="">
+                        </div>
+                        <div class="contentdiv">
+                            <img src="../images/espresso-coffee.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id="paginate-slider2" class="pagination">
+
+                        <a href="#" class="toc">
+                            <img src="../images/black-coffee.jpg" width="80" height="55" alt="">
+                        </a>
+                        <a href="#" class="toc anotherclass">
+                            <img src="../images/cafe-breve.jpg" width="80" height="55" alt="">
+                        </a>
+                        <a href="#" class="toc">
+                            <img src="../images/espresso-coffee.jpg" width="80" height="55" alt="">
+                        </a>
+                        <a href="#" class="prev" style="margin-left: 10px">
                             <a href="#" class="next">></a>
 
+                    </div>
+                    <script type="text/javascript">
+
+                        featuredcontentslider.init({
+                            id: "slider2",  //id of main slider DIV
+                            contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+                            toc: "markup",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+                            nextprev: ["Previous", "Next"],  //labels for "prev" and "next" links. Set to "" to hide.
+                            revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
+                            enablefade: [true, 0.2],  //[true/false, fadedegree]
+                            autorotate: [true, 3000],  //[true/false, pausetime]
+                            onChange: function (previndex, curindex, contentdivs) {  //event handler fired whenever script changes slide
+                                //previndex holds index of last slide viewed b4 current (0=1st slide, 1=2nd etc)
+                                //curindex holds index of currently shown slide (0=1st slide, 1=2nd etc)
+                            }
+                        })
+                    </script>
                 </div>
-                <script type="text/javascript">
+                <br>
+                <div>
 
-                    featuredcontentslider.init({
-                        id: "slider2",  //id of main slider DIV
-                        contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
-                        toc: "markup",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
-                        nextprev: ["Previous", "Next"],  //labels for "prev" and "next" links. Set to "" to hide.
-                        revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
-                        enablefade: [true, 0.2],  //[true/false, fadedegree]
-                        autorotate: [true, 3000],  //[true/false, pausetime]
-                        onChange: function (previndex, curindex, contentdivs) {  //event handler fired whenever script changes slide
-                            //previndex holds index of last slide viewed b4 current (0=1st slide, 1=2nd etc)
-                            //curindex holds index of currently shown slide (0=1st slide, 1=2nd etc)
-                        }
-                    })
-                </script>
-                <h2>
-                    Benefits & Effects
-                </h2>
-                <p>
-                    You may love your <b>black coffee</b> in the morning to help you feel energized and get ready for the day,
-                    but how much do you know about it? Do you know how drinking <b>black coffee</b> affects your body and your
-                    mind? Are you aware of the benefits of <b>black coffee</b> and its side effects?
-
-                </p>
-                <p>
-                    <b>Black coffee</b> is simply coffee that is normally brewed without the addition of additives such as
-                    sugar, milk, cream, or added flavors. While it has a slightly bitter taste compared to when it is
-                    flavored with additives, many people love a strong cup of <b>black coffee</b>. In fact, for some, it is
-                    part of their everyday diet.
-                </p>
-                <p>
-                    In this article, we talk about the benefits of drinking <b>black coffee</b>, how it can help you in losing
-                    weight, potential side effects, as well as how to make the perfect cup of <b>black coffee</b>.
-                </p>
+                    <h2>
+                        Benefits & Effects
+                    </h2>
+                    <p>
+                        You may love your <b>black coffee</b> in the morning to help you feel energized and get ready for
+                        the day,
+                        but how much do you know about it? Do you know how drinking <b>black coffee</b> affects your body
+                        and your
+                        mind? Are you aware of the benefits of <b>black coffee</b> and its side effects?
+    
+                    </p>
+                    <p>
+                        <b>Black coffee</b> is simply coffee that is normally brewed without the addition of additives such
+                        as
+                        sugar, milk, cream, or added flavors. While it has a slightly bitter taste compared to when it is
+                        flavored with additives, many people love a strong cup of <b>black coffee</b>. In fact, for some, it
+                        is
+                        part of their everyday diet.
+                    </p>
+                    <p>
+                        In this article, we talk about the benefits of drinking <b>black coffee</b>, how it can help you in
+                        losing
+                        weight, potential side effects, as well as how to make the perfect cup of <b>black coffee</b>.
+                    </p>
+                </div>
             </section>
             <!-- InstanceEndEditable -->
             <!-- #endregion -->

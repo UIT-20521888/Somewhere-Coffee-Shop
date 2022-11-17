@@ -1,6 +1,6 @@
 .sliderwrapper{
-position: relative; /*leave as is*/
-overflow: hidden; /*leave as is*/
+position: relative; 
+overflow: hidden; 
 border: 10px solid #4B2802;
 border-bottom-width: 6px;
 width: 400px; /*width of featured content slider*/
@@ -12,10 +12,10 @@ float:left;
 
 
 .sliderwrapper .contentdiv{
-visibility: hidden; /*leave as is*/
-position: absolute; /*leave as is*/
-left: 0;  /*leave as is*/
-top: 0;  /*leave as is*/
+visibility: hidden;
+position: absolute; 
+left: 0;  
+top: 0;  
 padding: 5px;
 background: white;
 width: 390px; /*width of content DIVs within slider. Total width should equal slider's inner width (390+5+5=400) */
