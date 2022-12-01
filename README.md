@@ -18,6 +18,7 @@ After choosing the type of coffee to drink. We will go to the page of each of th
 --------------------------------------------------------
 
 In addition, the project is also compatible on devices: Labtop, ipad, smartplone:
+
 - Labtop 
 
 ![img](./images-screen/labtop.jpg)
